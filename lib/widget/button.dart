@@ -15,9 +15,9 @@ class Button extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: bgColor, borderRadius: BorderRadius.circular(20)),
+          color: bgColor, borderRadius: BorderRadius.circular(30)),
       child: Padding(
-        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 25),
+        padding: EdgeInsets.symmetric(vertical: 25, horizontal: 35),
         child: Text(
           '$text',
           style: TextStyle(color: txtColor),
