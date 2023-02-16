@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/pomodoro/pomodoroApp.dart';
 import 'package:toonflix/widget/button.dart';
 import 'package:toonflix/widget/card.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(PomodoroApp());
 }
 
 class MyApp extends StatelessWidget {
