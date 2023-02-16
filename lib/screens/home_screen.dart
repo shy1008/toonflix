@@ -88,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Center(
                 child: isRunning
                     ? PausedButton(callback: onPausePressed)
-                    : PlayedButton(refreshCallback: onRefreshed, pauseCallback: onStartPressed),
+                    : PlayedButton(refreshCallback: onRefreshed, startCallback: onStartPressed),
             )
           ),
           Flexible(

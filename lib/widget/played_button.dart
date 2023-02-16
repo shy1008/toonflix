@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class PlayedButton extends StatelessWidget {
   final VoidCallback refreshCallback;
-  final VoidCallback pauseCallback;
+  final VoidCallback startCallback;
 
-  const PlayedButton({super.key, required this.refreshCallback, required this.pauseCallback});
+  const PlayedButton({super.key, required this.refreshCallback, required this.startCallback});
 
 
 
@@ -23,7 +23,7 @@ class PlayedButton extends StatelessWidget {
         IconButton(
           iconSize: 120,
           color: Theme.of(context).cardColor,
-          onPressed: pauseCallback,
+          onPressed: startCallback,
           icon: Icon(Icons.play_circle_outline),
         ),
       ],
