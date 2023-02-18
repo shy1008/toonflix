@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:toonflix/pomodoro/pomodoroApp.dart';
+import 'package:toonflix/category/webtoonApp.dart';
 import 'package:toonflix/widget/button.dart';
 import 'package:toonflix/widget/card.dart';
 
+import 'category/pomodoroApp.dart';
+
 void main() {
-  runApp(PomodoroApp());
+  runApp(WebToonApp());
 }
 
 class MyApp extends StatelessWidget {
