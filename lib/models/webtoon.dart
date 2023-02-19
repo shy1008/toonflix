@@ -1,8 +1,9 @@
 class Webtoon {
-  final id;
-  final title;
-  final description;
+  final String title, thumb, id;
 
-  Webtoon(this.id, this.title, this.description);
+  Webtoon.fromJson(Map<String, dynamic> json)
+      : title = json['title'],
+        thumb = json['thumb'],
+        id = json['id'];
 
 }
