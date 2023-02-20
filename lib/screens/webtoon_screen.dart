@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:toonflix/services/api_service.dart';
 import 'package:toonflix/widget/toon_list_widget.dart';
 
-import '../models/webtoon.dart';
+import '../models/webtoon_model.dart';
 
 
 class WebToonScreen extends StatelessWidget {
   WebToonScreen({Key? key}) : super(key: key);
 
-  Future<List<Webtoon>> webtoons = ApiService.getTodaysToons();
+  Future<List<WebtoonModel>> webtoons = ApiService.getTodaysToons();
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,7 @@ class WebToonScreen extends StatelessWidget {
     );
   }
 
-  ListView makeList(AsyncSnapshot<List<Webtoon>> snapshot) {
+  ListView makeList(AsyncSnapshot<List<WebtoonModel>> snapshot) {
     return ListView.separated(
       scrollDirection: Axis.horizontal,
       itemCount: snapshot.data!.length,
